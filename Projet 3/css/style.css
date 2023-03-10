@@ -129,10 +129,14 @@ button .loc {
     gap: 15px;
     align-items: center;
     flex-wrap: wrap;
+    transition: transform 0.2s ease-in-out;
+
 }
 
 .filtre button:hover {
     background-color: #DEEBFF;
+    transform: scale(1.03);
+
 }
 
 .filtre button img {
@@ -171,7 +175,7 @@ button .loc {
 
 }
 .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 
 }
 .card img {
@@ -409,16 +413,19 @@ footer p {
 
     header nav a {
         padding: 20px;
-
     }
     .blue{
+        border-top: #FFF;
         border-bottom: 2px solid #0065FC;
     }
 
-    .blue:hover{
-        border-top: none;
-
+    .right {
+        border-bottom: #FFF;
     }
+    .left {
+        color: var(--main-color)
+    }
+    
     .logo {
         padding: 30px;
         height: 19px;
@@ -437,7 +444,7 @@ footer p {
    .btn1 {
     display: none;
    }
-   /* faire en sorte que le form et le bouton se collent*/
+
    .loc {
     height: 66px;
     width: 66px;
@@ -476,6 +483,8 @@ footer p {
         justify-content: space-around;
         flex-wrap: wrap;
         gap: 10px;
+        transform: scale(1.03);
+
     }
 
     .filtre button {
