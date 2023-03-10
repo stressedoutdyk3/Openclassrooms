@@ -7,6 +7,7 @@
     <title>Booki</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/17c1eb8911.css" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -20,7 +21,8 @@
             <img class="logo" src="images/logo/Booki.png" alt="Logo de Booki"/>
             <nav>
                 <a href="#hebergements" class="blue left">Hébergements</a>
-                <a href ="#activité" class="blue right">Activités</a>
+                <!--Bug bizarre juste en dessous le lien ne me renvoie pas a la classe activité-->
+                <a href="#activité" class="blue right">Activités</a>
             </nav>
         </header>
         <main>
@@ -41,10 +43,10 @@
             <section class="filtre">
                 <span><h5>Filtres</h5></span>
                 <div class="buttons">
-                    <button><img src="images/pictogrammes/eco.svg" alt="Pictogramme billet de banque"/>Economique</button>
-                    <button><img src="images/pictogrammes/family.svg" alt="Pictogramme personne debout"> Familial</button>
-                    <button><img src="images/pictogrammes/romantic.svg" alt="Pictogramme coeur">Romantique</button>
-                    <button><img src="images/pictogrammes/pepites.svg" alt="Pictogramme flamme">Nos pépites</button>  
+                    <button><i class="fa-solid fa-money-bill-wave"></i>Economique</button>
+                    <button><i class="fa-solid fa-person"></i>Familial</button>
+                    <button><i class="fa-solid fa-heart"></i>Romantique</button>
+                    <button><i class="fa-solid fa-fire"></i>Nos pépites</button>  
                 </div>
                 
             </section>
@@ -242,7 +244,7 @@
                     </div>
                 </section>
             </div>
-            
+
             <h3>Activités à Marseille</h3>
 
             <section class="activité">
@@ -290,6 +292,8 @@
             </section>
         </main>
         <footer>
+            <nav>
+            </nav>
             <article>
                 <h4>À propos</h4>
                 <p>Fonctionnement du site</p>

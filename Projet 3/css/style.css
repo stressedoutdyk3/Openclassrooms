@@ -1,3 +1,4 @@
+
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
@@ -140,8 +141,8 @@ button .loc {
 
 }
 
-.filtre button img {
-    height: 22px;
+.filtre button i {
+    font-size: 22px;
 }
 .nbr {
     display: flex;
