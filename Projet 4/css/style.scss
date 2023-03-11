@@ -98,18 +98,20 @@ header {
                 font-size: 16px;
             }
             .nbr {
-                font-size: 20px;
+                background: #9356dc;
+                color: white;
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
                 position: absolute;
                 margin-right: 320px;
-                background-color: #9356DC;
-                border-radius: 50px;
-                color: white;
-                padding: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
         
     }
 }
-
 
 .restaurants {
     background-color: #EAEAEA;
@@ -119,9 +121,13 @@ header {
     align-items: center;
     gap: 15px;
     padding-bottom: 50px;
-
+    
+    a {
+        width: 90%;
+        text-decoration: none;
+    }
         .card__restaurants {
-            width: 90%;
+            width: 100%;
             border-radius: 20px;
             background-color: white;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
@@ -140,6 +146,7 @@ header {
                     padding-right: 10px;
                     display: flex;
                     justify-content: space-between;
+                    color: black;
 
                     i:hover {
                         background: linear-gradient(to bottom, #FF79DA, #9356DC);
@@ -151,6 +158,17 @@ header {
                     font-size: 17px;
                     font-weight: 300;
                     padding-left: 10px;
+                    color: black;
+
+                }
+                .nouveau {
+                    position: absolute;
+                    margin-left: 73%;
+                    padding: 5px;
+                    background-color: #99E2D0;
+                    color: #008766;
+                    border-radius: 3px;
+                    font-size: 14px;
                 }
         }
 }
@@ -159,6 +177,7 @@ footer {
     background-color: #353535;
     padding-top: 10px;
     padding-bottom: 5px;
+    color: white;
 
     ul {
         list-style-type: none;
@@ -168,6 +187,9 @@ footer {
 
         li {
             padding: 5px;;
+            i {
+                padding-right: 7px;
+            }
 
         }
     }
