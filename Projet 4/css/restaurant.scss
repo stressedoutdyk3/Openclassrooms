@@ -1,7 +1,4 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 20px 0px;
-}
+@forward 'globals';
 
 
 header {
@@ -9,12 +6,19 @@ header {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+
 
     .top__header {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
+        background-color: white;
+        position: fixed;
+        top: 0px;
+        z-index: 15;
+        padding-top: 10px;
     
         a {
           justify-self: start;
@@ -32,11 +36,17 @@ header {
         }
         .img__header {
             width: 100%;
+            top: 50px;
+            position: relative;
+            z-index: 1;
         }
 }
 
 main {
-    background-color: #EAEAEA;
+    background-color: var(--main-background-color);
+    border-radius: 20px 20px 0px 0px;
+    position: relative;
+    z-index: 14;
 
    .top__main{
         display: flex;
@@ -64,7 +74,7 @@ main {
                 align-self: flex-start;
                 margin-left: 15px;
                 span {
-                border-bottom: #99E2D0 4px solid;
+                border-bottom: var(--green) 4px solid;
             }
 
          }
@@ -98,11 +108,12 @@ main {
                 }    
         }    
         }
-    button {
+
+        .btn__commander {
         height: 50px;
         width: 218px;
         font-size: 16px;
-        background: linear-gradient(to bottom, #FF79DA, #9356DC);
+        background: linear-gradient(to bottom, var(--pink), var(--purple));
         color: white;
         border-radius: 25px;
         border: none;
@@ -112,5 +123,35 @@ main {
 
     }
 }
+
+footer {
+    background-color: var(--footer-color);
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: white;
+
+    ul {
+        list-style-type: none;
+        color: white;
+        margin: 0px;
+        font-size: 16px;
+
+        li {
+            padding: 5px;;
+            i {
+                padding-right: 7px;
+            }
+
+        }
+    }
+    img {
+        width: 100px;
+
+        
+    }
+}
+
+
+
 
     

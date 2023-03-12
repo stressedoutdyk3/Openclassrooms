@@ -1,7 +1,18 @@
 @charset "UTF-8";
+:root {
+  --main-background-color: #EAEAEA;
+  --purple: #9356DC;
+  --pink: #FF79DA;
+  --green: #99E2D0;
+  --light-purple: #F5EDFF;
+  --footer-color: #353535;
+}
+
 body {
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", sans-serif;
-  margin: 20px 0px;
+  margin-top: 20px;
 }
 
 header {
@@ -9,12 +20,18 @@ header {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 header .top__header {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  z-index: 15;
+  padding-top: 10px;
 }
 header .top__header a {
   justify-self: start;
@@ -30,10 +47,16 @@ header .logo__header {
 }
 header .img__header {
   width: 100%;
+  top: 50px;
+  position: relative;
+  z-index: 1;
 }
 
 main {
-  background-color: #EAEAEA;
+  background-color: var(--main-background-color);
+  border-radius: 20px 20px 0px 0px;
+  position: relative;
+  z-index: 14;
 }
 main .top__main {
   display: flex;
@@ -63,7 +86,7 @@ main .entrée h4, main .plat h4, main .dessert h4 {
   margin-left: 15px;
 }
 main .entrée h4 span, main .plat h4 span, main .dessert h4 span {
-  border-bottom: #99E2D0 4px solid;
+  border-bottom: var(--green) 4px solid;
 }
 main .entrée .card, main .plat .card, main .dessert .card {
   background-color: white;
@@ -93,15 +116,37 @@ main .entrée .card .card__content .card__price, main .plat .card .card__content
   font-weight: 700;
   color: #353535;
 }
-main button {
+main .btn__commander {
   height: 50px;
   width: 218px;
   font-size: 16px;
-  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  background: linear-gradient(to bottom, var(--pink), var(--purple));
   color: white;
   border-radius: 25px;
   border: none;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   margin-top: 30px;
   margin-bottom: 40px;
-}/*# sourceMappingURL=restaurant1.css.map */
+}
+
+footer {
+  background-color: var(--footer-color);
+  padding-top: 10px;
+  padding-bottom: 5px;
+  color: white;
+}
+footer ul {
+  list-style-type: none;
+  color: white;
+  margin: 0px;
+  font-size: 16px;
+}
+footer ul li {
+  padding: 5px;
+}
+footer ul li i {
+  padding-right: 7px;
+}
+footer img {
+  width: 100px;
+}/*# sourceMappingURL=restaurant.css.map */

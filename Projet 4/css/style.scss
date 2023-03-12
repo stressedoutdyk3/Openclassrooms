@@ -1,21 +1,6 @@
-$colors: (
-    purple: #9356DC,
-    pink: #FF79DA,
-    green: #99E2D0,
-    light-purple: #F5EDFF
-);
-
-@each $colors, $hex in $colors {
-    .#{$colors} {
-        background-color: $hex;
-    }
-}
+@forward 'globals';
 
 
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 20px 0px;
-}
 
 header {
     display: flex;
@@ -31,7 +16,7 @@ header {
             display: flex;
             justify-content: center;
             gap: 20px;
-            background-color: #EAEAEA;
+            background-color: var(--main-background-color);
             width: 100%;
             text-align: center;
     
@@ -58,7 +43,7 @@ header {
             height: 50px;
             width: 218px;
             font-size: 16px;
-            background: linear-gradient(to bottom, #FF79DA, #9356DC);
+            background: linear-gradient(to bottom, var(--pink), var(--purple));
             color: white;
             border-radius: 25px;
             border: none;
@@ -76,7 +61,7 @@ header {
     padding-bottom: 30px;
 
     .light-purple {
-        background-color: #F5EDFF;
+        background-color: var(--light-purple);
     }
     
     article {
@@ -98,7 +83,7 @@ header {
                 font-size: 16px;
             }
             .nbr {
-                background: #9356dc;
+                background: var(--purple);
                 color: white;
                 width: 2rem;
                 height: 2rem;
@@ -114,7 +99,7 @@ header {
 }
 
 .restaurants {
-    background-color: #EAEAEA;
+    background-color: var(--main-background-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,7 +134,7 @@ header {
                     color: black;
 
                     i:hover {
-                        background: linear-gradient(to bottom, #FF79DA, #9356DC);
+                        background: linear-gradient(to bottom, var(--pink), var(--purple));
 
 
                     }
@@ -165,7 +150,7 @@ header {
                     position: absolute;
                     margin-left: 73%;
                     padding: 5px;
-                    background-color: #99E2D0;
+                    background-color: var(--green);
                     color: #008766;
                     border-radius: 3px;
                     font-size: 14px;
@@ -174,7 +159,7 @@ header {
 }
 
 footer {
-    background-color: #353535;
+    background-color: var(--footer-color);
     padding-top: 10px;
     padding-bottom: 5px;
     color: white;
@@ -199,4 +184,5 @@ footer {
         
     }
 }
+
 

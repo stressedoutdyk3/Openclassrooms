@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 20px 0px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+header .top__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+header .top__header a {
+  justify-self: start;
+  position: absolute;
+  margin-right: 90%;
+  margin-bottom: 10px;
+  color: black;
+  font-size: 30px;
+}
+header .logo__header {
+  height: 36px;
+  padding-bottom: 10px;
+}
+header .img__header {
+  width: 100%;
+}
+
+main {
+  background-color: #EAEAEA;
+}
+main .top__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0px 10px;
+}
+main .top__main h1 {
+  font-family: "Shrikhand";
+  font-size: 34px;
+  font-weight: 400;
+}
+main .top__main i {
+  margin-right: 20px;
+  font-size: 30px;
+}
+main .entrée, main .plat, main .dessert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .entrée h4, main .plat h4, main .dessert h4 {
+  font-size: 20px;
+  font-weight: 300;
+  align-self: flex-start;
+  margin-left: 15px;
+}
+main .entrée h4 span, main .plat h4 span, main .dessert h4 span {
+  border-bottom: #99E2D0 4px solid;
+}
+main .entrée .card, main .plat .card, main .dessert .card {
+  background-color: white;
+  display: flex;
+  border-radius: 25px;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+main .entrée .card .card__title, main .plat .card .card__title, main .dessert .card .card__title {
+  margin: 5px;
+  font-size: 22px;
+}
+main .entrée .card .card__content, main .plat .card .card__content, main .dessert .card .card__content {
+  display: flex;
+  justify-content: space-between;
+}
+main .entrée .card .card__content p, main .plat .card .card__content p, main .dessert .card .card__content p {
+  margin: 5px;
+  font-weight: 300;
+  font-size: 22px;
+}
+main .entrée .card .card__content .card__price, main .plat .card .card__content .card__price, main .dessert .card .card__content .card__price {
+  font-weight: 700;
+  color: #353535;
+}
+main .btn__commander {
+  height: 50px;
+  width: 218px;
+  font-size: 16px;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  color: white;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: #353535;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  color: white;
+}
+footer ul {
+  list-style-type: none;
+  color: white;
+  margin: 0px;
+  font-size: 16px;
+}
+footer ul li {
+  padding: 5px;
+}
+footer ul li i {
+  padding-right: 7px;
+}
+footer img {
+  width: 100px;
+}/*# sourceMappingURL=restaurant1.css.map */
